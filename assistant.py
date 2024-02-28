@@ -33,10 +33,9 @@ Why this tech stack :
 
 Demo :
 Give a code for basic to demontrate the tech stack
-
 """
+
 input = prompt
-st.text(input)
 submit=st.button("Ask the question")
 
 if submit and input:
