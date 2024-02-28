@@ -11,11 +11,10 @@ ggi.configure(api_key = fetched_api_key)
 model = ggi.GenerativeModel("gemini-pro") 
 chat = model.start_chat(history=[])
 def LLM_Response(question):
-
-    response=chat.send_message(question,stream=True)
+    response = chat.send_message(question,stream=True)
     return response
 
-st.set_page_config(page_title="Generator")
+st.set_page_config(page_title = "Generator")
 
 st.header("Course Content Generator")
 
